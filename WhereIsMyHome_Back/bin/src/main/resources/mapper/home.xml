@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.home.model.mapper.HomeMapper">
+
+	<select id="findSido">
+		select distinct sidoname
+		from dongcode
+	</select>
+	
+	<select id="findGugunBySido">
+		select distinct gugunname 
+		from dongcode 
+		where sidoname = #{sido} and gugunname is not null
+
+	</select>
+	
+	<select id="findDongByGugun">
+		select distinct dongname
+		from dongcode 
+		where gugunname = #{gugun} and dongname is not null
+	
+	</select>
+	
+	<select id="findApartByDong">
+		select * 
+		from houseinfo 
+		where dongCode = #{dong}
+		
+	</select>
+	
+	
+	<select id="findDongCodeByfullname" parameterType="map" resultType="String">
+		select * 
+		from dongcode
+		where sidoName=#{sido} and gugunName=#{gugun} and dongName= #{dong}
+	</select>
+	
+</mapper>

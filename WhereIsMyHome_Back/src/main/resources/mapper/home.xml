@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.home.model.mapper.HomeMapper">
+
+	<select id="findSido">
+		select distinct sidoname
+		from dongcode
+	</select>
+	
+	<select id="findGugunBySido">
+		select distinct gugunname 
+		from dongcode 
+		where sidoname = #{sido} and gugunname is not null
+
+	</select>
+	
+	<select id="findAptCode">
+	select aptCode
+	from houseinfo
+	where dongCode = #{dongCode} and apartmentName=#{apartmentName}
+	</select>
+	
+	<select id="findDongByGugun"  parameterType="map">
+		select distinct dongName
+		from dongcode 
+		where sidoname = #{sido} and gugunname = #{gugun} and dongname is not null
+	
+	</select>
+	
+	<select id="findApartByDong" >
+		select * 
+		from houseinfo 
+		where dongCode = #{dong}
+		
+	</select>
+	
+	<select id="findAptList">
+		select apartmentName
+		from houseinfo
+		where dongCode = #{dongCode}
+	</select>
+	
+	<select id="getHomeInfo" resultType="homedealDto">
+		select dealAmount,dealYear,dealMonth,dealDay,area,floor
+		from housedeal
+		where aptCode = #{aptCode}
+	</select>
+	
+	
+	<select id="findDongCodeByfullname" parameterType="map" resultType="String">
+		select * 
+		from dongcode
+		where sidoName=#{sido} and gugunName=#{gugun} and dongName= #{dong}
+	</select>
+	
+	
+	<select id="findAmount" resultType ="String">
+		    select dealAmount
+    		from housedeal
+    		where aptCode = #{aptCode}
+    		order by dealYear desc, dealMonth desc, dealDay desc limit 1
+	</select>
+	
+	<select id="findApartByAptCode" parameterType="string" resultType="houseInfoDto">
+		select *
+		from houseinfo
+		where aptCode = #{aptCode}
+	</select>
+</mapper>

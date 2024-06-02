@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.board.model.mapper.BoardMapper">
+
+	<select id="list" resultType="boardDto">
+		select *
+		from board
+	</select>
+
+	<insert id="registArticle" parameterType="boardDto">
+		insert into
+		board(user_id,subject,content,hit,register_time)
+		values(#{user_id},#{boardDto.subject},#{boardDto.content},1,now())
+	</insert>
+
+<select id="multipleSearch" parameterType="String" resultType="boardDto">
+    SELECT *
+    FROM board
+    <where>
+        <choose>
+            <when test="selectKey == 'user_id'">
+                user_id = #{inputText}
+            </when>
+            <when test="selectKey == 'article_no'">
+                article_no = #{inputText}
+            </when>
+            <when test="selectKey == 'subject'">
+                subject = #{inputText}
+            </when>
+            <!-- 기본적으로 아무런 제한 조건을 추가하지 않고 전체 데이터를 반환 -->
+            <otherwise>
+                user_id = 'ssafy'
+            </otherwise>
+        </choose> 
+    </where>
+</select>
+
+
+<select id="getBoardbyarticle">
+	
+	select *
+	from board
+	where article_no = #{article_no}
+
+</select>
+
+<update id="modify"  parameterType="map">
+	update board
+	set subject=#{subject}, content=#{content},hit=#{hit},register_time=#{register_time}
+	where article_no = #{article_no}
+
+</update>
+
+<delete id="deletebyarticle">
+	delete from board
+	where article_no = #{article_no}
+</delete>
+
+<update id="updateHit" parameterType="int">
+		update board
+		set hit = hit + 1
+		where article_no = #{articleNo}
+	</update>
+	
+		<update id="modifyArticle" parameterType="boardDto">
+		update board
+		set subject = #{subject}, content = #{content}
+		where article_no = #{article_no}
+	</update>
+
+
+
+
+</mapper>

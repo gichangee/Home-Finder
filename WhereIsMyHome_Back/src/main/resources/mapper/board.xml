@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.board.model.mapper.BoardMapper">
+
+	<select id="articleListSize" parameterType="map" resultType="int">
+		select count(*)
+		from board
+		where article_type = #{article_type}
+		<where>
+        <if test="select != '검색조건' and select != null and word != null">
+           and ${select} LIKE CONCAT('%', #{word}, '%')
+        </if>
+   		 </where>
+	</select>
+	
+		<select id="reviewListSize" resultType="int">
+		select count(*)
+		from review
+		<where>
+	        <if test="select != '검색조건' and select != null and word != null">
+	            ${select} LIKE CONCAT('%', #{word}, '%')
+	        </if>
+   		 </where>
+	</select>
+	
+	<select id="reviewDetailList">
+	select * from review where aptCode =#{aptCode} 
+	 order by register_time desc
+	 limit 5
+	</select>
+	
+		<select id="list" parameterType="int" resultType="boardDto">
+		select *
+		from board
+		where article_type  = #{article_type}
+	</select>
+
+	<insert id="registArticle" parameterType="boardDto">
+		insert into
+		board(user_id,subject,content,hit,register_time,article_type)
+		values(#{user_id},#{subject},#{content},0,now(),#{article_type})
+	</insert>
+
+
+<select id="reviewlist">
+	select * 
+	from review;
+</select>
+
+<insert id="registReview" parameterType="ReviewDto">
+	insert into
+	review(subject,apartmentName,content,user_id,aptCode,star)
+	values(#{subject},#{apartmentName},#{content},#{user_id},#{aptCode},#{star})
+</insert>
+
+
+<select id="multipleSearch" parameterType="map" resultType="boardDto">
+    SELECT *
+    FROM board
+    <where>
+        <choose>
+            <when test="selectKey == 'user_id'">
+                  user_id LIKE CONCAT('%', #{inputText}, '%') and article_type = #{article_type}
+            </when>
+            <when test="selectKey == 'article_no'">
+             article_no LIKE CONCAT('%', #{inputText}, '%') and article_type = #{article_type}
+               
+            </when>
+            <when test="selectKey == 'subject'">
+             subject LIKE CONCAT('%', #{inputText}, '%') and article_type = #{article_type}
+               
+            </when>
+        </choose> 
+    </where>
+</select>
+
+
+<select id="multipleReviewSearch" parameterType="map" resultType="reviewDto">
+    SELECT *
+    FROM review
+    <where>
+        <choose>
+            <when test="selectKey == 'apartmentName'">
+                  apartmentName LIKE CONCAT('%', #{inputText}, '%') 
+            </when>
+            <when test="selectKey == 'user_id'">
+              user_id LIKE CONCAT('%', #{inputText}, '%')
+               
+            </when>
+            <when test="selectKey == 'subject'">
+             subject LIKE CONCAT('%', #{inputText}, '%') 
+               
+            </when>
+        </choose> 
+    </where>
+</select>
+
+
+<select id="getBoardbyarticle">
+	
+	select *
+	from board
+	where article_no = #{article_no}
+
+</select>
+
+<select id="getReviewbyarticle">
+	select *
+	from review
+	where review_no = #{review_no}
+</select>
+
+<update id="modify"  parameterType="map">
+	update board
+	set subject=#{subject}, content=#{content},hit=#{hit},register_time=#{register_time}
+	where article_no = #{article_no}
+
+</update>
+
+<delete id="deletebyarticle">
+	delete from board
+	where article_no = #{article_no}
+</delete>
+
+<delete id="deleteReview">
+	delete from review
+	where review_no=#{review_no}
+</delete>
+
+<update id="updateHit" parameterType="int">
+		update board
+		set hit = hit + 1
+		where article_no = #{articleNo}
+</update>
+	
+<update id="modifyArticle" parameterType="boardDto">
+		update board
+		set subject = #{subject}, content = #{content}
+		where article_no = #{article_no}
+</update>
+
+<update id="updateReviewHit">
+		update review
+		set hit = hit + 1
+		where review_no = #{review_no}
+</update>
+
+<update id="modifyReview" parameterType="ReviewDto">
+		update review
+		set subject = #{subject}, content = #{content}
+		where review_no = #{review_no}
+</update>
+
+<select id="listPage" parameterType="map" resultType="boardDto">
+    SELECT *
+    FROM board
+    where article_type = #{article_type}
+    <where>
+        <if test="select != '검색조건' and select != null and word != null">
+          and  ${select} LIKE CONCAT('%', #{word}, '%')
+        </if>
+    </where>
+       order by register_time desc
+    LIMIT #{start}, #{size}
+</select>
+
+<select id="reviewListPage" parameterType="map" resultType="reviewDto">
+    SELECT *
+    FROM review
+        <where>
+        <if test="select != '검색조건' and select != null and word != null">
+            ${select} LIKE CONCAT('%', #{word}, '%')
+        </if>
+    </where>
+       order by register_time desc
+    LIMIT #{start}, #{size}
+</select>
+
+<select id="getFreeBoardListLimit" parameterType="map" resultType="boardDto">
+    select *
+    from board
+    where article_type = #{article_type}
+    order by register_time desc
+    limit 10
+</select>
+
+<select id="getReviewBoardListLimit"  parameterType="map" resultType="reviewDto">
+    select *
+    from review
+    order by register_time desc
+    limit 10
+</select>
+</mapper>

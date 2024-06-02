@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.building.model.mapper.BuildingMapper">
+
+	<select id="findBuildingList" >
+		SELECT * 
+		FROM commercialbuilding 
+		WHERE medium_business_category 
+		LIKE CONCAT('%', #{medium_business_category}, '%') and dongCode = #{dongCode}
+	</select>
+	
+	<select id="findBusstopList">
+		select * 
+		from busstop
+		where city = #{city}
+	</select>
+
+</mapper>
