@@ -1,93 +1,74 @@
-# SSAFY11_광주5_관통_Vue.js_5팀_박기창_이예빈
+## SSAFY11_광주5_관통_5팀_박기창_이예빈
+
+### 구현기능
+
+
+## 1. 기본기능
+###  주택 실거래가 검색
+![주택 검색](https://i.imgur.com/Pmf7sRT.gif)
+#### 코드
+![주택](https://github.com/gichangee/CodingTest/assets/93646339/a567e9fb-45d4-4d09-9e87-fb162da642e0)
+
+###  회원가입
+![회원가입.gif](./회원가입.gif)
+#### 코드
+![스크린샷 2024-04-28 오후 1.48.15.png](./스크린샷 2024-04-28 오후 1.48.15.png)
+
+###  로그인
+![로그인.gif](./로그인.gif)
+#### 코드 
+![스크린샷 2024-04-28 오후 2.47.47.png](./스크린샷 2024-04-28 오후 2.47.47.png)
+
+###  로그아웃
+![logout.gif](./logout.gif)
+#### 코드
+![스크린샷 2024-04-28 오후 1.48.59.png](./스크린샷 2024-04-28 오후 1.48.59.png)
+
+### 회원 수정
+![정보수정.gif](./정보수정.gif)
+#### 코드
+![스크린샷 2024-04-28 오후 1.49.52.png](./스크린샷 2024-04-28 오후 1.49.52.png)
+### 회원 삭제
+![삭제.gif](./삭제.gif)
+#### 코드
+![스크린샷 2024-04-28 오후 2.02.40.png](./스크린샷 2024-04-28 오후 2.02.40.png)
+### 비밀번호 찾기
+![비밀번호찾기](https://github.com/gichangee/CodingTest/assets/93646339/ab9860a1-6c4b-43c0-8184-d3209c1fc398)
+#### 코드
+![비밀번호찾기코드](https://i.imgur.com/Q6nsYLz.png)
+### 글쓰기
+![글쓰기](https://github.com/gichangee/CodingTest/assets/93646339/abe53e49-d13e-4fff-a8bc-0324b149e73c)
+#### 코드
+![글작성](https://github.com/gichangee/CodingTest/assets/93646339/1ce00486-c15d-4c5e-b43e-62b373976e19)
+
+### 게시판
+![게시판](https://github.com/gichangee/CodingTest/assets/93646339/75d1b3d0-5431-46d0-b3c9-e9ae8d3a9155)
+#### 코드
+![글목록](https://github.com/gichangee/CodingTest/assets/93646339/e9076b22-4e1c-4b75-84fe-817dc23b902a)
+### 비밀번호 해싱
+![비밀번호해싱](https://github.com/gichangee/CodingTest/assets/93646339/62d09715-06c8-4849-9272-b9fd23f8b6d7)
+### 코드
+#### 라이브러리사용<br>
+![비밀번호해싱](https://github.com/gichangee/CodingTest/assets/93646339/d84862bd-82ad-4e4a-889b-a749c1a91ffb)
+### 게시판 상세조회
+![게시판상세조회](https://github.com/gichangee/CodingTest/assets/93646339/4edb4ab0-8f28-498c-801b-4c7424351fdc)
+### 코드
+![상세조회](https://github.com/gichangee/CodingTest/assets/93646339/a62b565d-83c8-4d38-bdf8-460e92840f32)
+
+### 게시판 검색 기능
+![글목록검색기능](https://github.com/gichangee/CodingTest/assets/93646339/20cfcc59-7ca3-4451-a8cf-7e8f40185836)
+### 코드
+![다중조건검색](https://github.com/gichangee/CodingTest/assets/93646339/7dfc1e11-1c5b-4d99-adeb-d41f066882c8)
+
+### 게시판 글 수정 
+### 코드
+![글 수정](https://github.com/gichangee/CodingTest/assets/93646339/7ee91de3-9998-4018-a65f-4973018c087a)
+### 게시판 글 삭제
+### 코드
+![글 삭제](https://github.com/gichangee/CodingTest/assets/93646339/2976570d-d0af-4891-a0e9-0faff78d2e04)
 
 
 
-## Getting started
+## 2. ER 다이어그램
+![ER다이어그램](https://github.com/gichangee/CodingTest/assets/93646339/50306fb5-7898-4c0a-b4d4-ed6498bbb9b5)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://lab.ssafy.com/parkgc0504/WhereIsMyHome_Vue.js.git
-git branch -M master
-git push -uf origin master
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://lab.ssafy.com/parkgc0504/WhereIsMyHome_Vue.js/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
