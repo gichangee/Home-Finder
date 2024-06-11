@@ -30,6 +30,6 @@
 | Backend, Frontend | Backend, Frontend |
 |----------------------------------------|---------------------------------|
 |  [박기창](https://github.com/gichangee)| [이예빈](https://github.com/dpqls0356)       |
-| <img src="https://github.com/JourneyJinni/.github/assets/130115689/2707f0d7-3239-4755-8d34-fa91939a9723" width="120"> | <img src="https://github.com/JourneyJinni/.github/assets/130115689/98d32549-eb84-4055-b9c3-3e1d734659fe" width="120"> |
+| <img src="https://avatars.githubusercontent.com/u/93646339?v=4" width="120"> | <img src="https://avatars.githubusercontent.com/u/83651122?v=4" width="120"> |
 
 
