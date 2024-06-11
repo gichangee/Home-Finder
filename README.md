@@ -1,4 +1,12 @@
-## SSAFY11_광주5_관통_5팀_박기창_이예빈
+# ![image](https://github.com/gichangee/Home-Finder/assets/93646339/8910e7d9-e409-44c5-9879-85e344f07d65) 동네탐색기(Home Finder)
+
+![](https://imgur.com/9luF55f.png)
+
+> Home Finder  웹사이트<br>
+> 임베딩 API를 활용해 유사도를 측정하여 여행지를 추천해주는 서비스 <br>
+> 공공데이터 API를 활용해 최근 거래 내역을 알려주는 서비스 
+> 
+> 프로젝트 기간 : 2024.05.10 ~ 2024.05.23
 
 ### 구현기능
 
