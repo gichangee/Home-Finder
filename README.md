@@ -12,9 +12,10 @@
 
 ## 주요 기능
 - 주택 거래 정보, 주변 편의 시설 정보 검색 기능 구현
-- Spring Boot를 활용한 MVC 패턴 웹 구현
+- Spring Boot를 활용한 MVC 패턴 웹 구현 맟 REST API 구현
 - MySQL를 활용한 DB 설계 및 구축
 - 카카오 API를 활용한 위치 정보 기반 지도 구현
+- JWT를 이용한 로그인 기능 구현
 
 ## 기술 스택
 ### BackEnd
