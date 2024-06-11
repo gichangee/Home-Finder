@@ -42,4 +42,9 @@
 ## ERD 다이어그램
 ![](https://imgur.com/3xGl4bD.png)
 
+## 프로젝트 구조도 
+![](https://imgur.com/auIJi4F.png)
 
+## 화면 구조 및 시연 영상
+
+[![영상 이미지](https://imgur.com/9luF55f.png)]()
