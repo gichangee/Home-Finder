@@ -19,10 +19,13 @@
 
 ### FrontEnd
 ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+<img src="https://img.shields.io/badge/vite-228be6?style=flat&logo=vite&logoColor=white"/>
+
 
 ### ETC
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![KakaoMap API](https://img.shields.io/badge/KakaoMap%20API-FFCD00?style=flat-square&logo=kakao&logoColor=black)
 
 ## 팀원
 
@@ -31,5 +34,12 @@
 |----------------------------------------|---------------------------------|
 |  [박기창](https://github.com/gichangee)| [이예빈](https://github.com/dpqls0356)       |
 | <img src="https://avatars.githubusercontent.com/u/93646339?v=4" width="120"> | <img src="https://avatars.githubusercontent.com/u/83651122?v=4" width="120"> |
+
+## Use-Case 다이어그램
+![](https://imgur.com/Z0sq5mh.png)
+
+
+## ERD 다이어그램
+![](https://imgur.com/3xGl4bD.png)
 
 
