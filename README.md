@@ -1,93 +1,56 @@
-# SSAFY11_광주5_관통_Vue.js_5팀_박기창_이예빈
+# ![image](https://github.com/gichangee/Home-Finder/assets/93646339/8910e7d9-e409-44c5-9879-85e344f07d65) 동네탐색기(Home Finder)
+
+![](https://imgur.com/9luF55f.png)
+
+> Home Finder  웹사이트<br>
+>
+> 공공데이터 API를 활용해 아파트 최근 거래 내역과 주변 편의시설을 알려주는 서비스 제공<br>
+>
+> 해당 아파트에 대한 리뷰 및 평점 제공 서비스 제공<br>
+>
+> 프로젝트 기간 : 2024.05.10 ~ 2024.05.23
+
+## 주요 기능
+- 주택 거래 정보, 주변 편의 시설 정보 검색 기능 구현
+- Spring Boot를 활용한 MVC 패턴 웹 구현 맟 REST API 구현
+- MySQL를 활용한 DB 설계 및 구축
+- 카카오 API를 활용한 위치 정보 기반 지도 구현
+- JWT를 이용한 로그인 기능 구현
+
+## 기술 스택
+### BackEnd
+  ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+  ![Spring Boot](https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+  ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
+### FrontEnd
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+<img src="https://img.shields.io/badge/vite-228be6?style=flat&logo=vite&logoColor=white"/>
 
 
+### ETC
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![KakaoMap API](https://img.shields.io/badge/KakaoMap%20API-FFCD00?style=flat-square&logo=kakao&logoColor=black)
 
-## Getting started
+## 팀원
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+| Backend, Frontend | Backend, Frontend |
+|----------------------------------------|---------------------------------|
+|  [박기창](https://github.com/gichangee)| [이예빈](https://github.com/dpqls0356)       |
+| <img src="https://avatars.githubusercontent.com/u/93646339?v=4" width="120"> | <img src="https://avatars.githubusercontent.com/u/83651122?v=4" width="120"> |
 
-## Add your files
+## Use-Case 다이어그램
+![](https://imgur.com/Z0sq5mh.png)
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
-```
-cd existing_repo
-git remote add origin https://lab.ssafy.com/parkgc0504/WhereIsMyHome_Vue.js.git
-git branch -M master
-git push -uf origin master
-```
+## ERD 다이어그램
+![](https://imgur.com/3xGl4bD.png)
 
-## Integrate with your tools
+## 프로젝트 구조도 
+![](https://imgur.com/auIJi4F.png)
 
-- [ ] [Set up project integrations](https://lab.ssafy.com/parkgc0504/WhereIsMyHome_Vue.js/-/settings/integrations)
+## 화면 구조 및 시연 영상
 
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+[![영상 이미지](https://imgur.com/9luF55f.png)]()
